@@ -75,37 +75,37 @@
       <!-- sezione 4-->
       <section class="midSection margin" id="se4">
         <h2 class="uppercase">speakers</h2>
-        <div class="slider">
-          <ul class="flex">
-            <li class="flex column flexCenter">
-              <img src="./img/speaker-1.jpg" alt="">
-              <span class="w3 uppercase">Torquato fagiani</span>
-              <em>Caldaie Ravasio Consultant</em>
-            </li>
-            <li class="flex column flexCenter">
-              <img src="./img/speaker-2.jpg" alt="">
-              <span class="w3 uppercase">walter panzeri</span>
-              <em>Tavernello Head of Sales</em>
-            </li>
-            <li class="flex column flexCenter">
-              <img src="./img/speaker-3.jpg" alt="">
-              <span class="w3 uppercase">angelina holy</span>
-              <em>Maxii's Manager</em>
-            </li>
-            <li class="flex column flexCenter">
-              <img src="./img/speaker-4.jpg" alt="">
-              <span class="w3 uppercase">micheal dover</span>
-              <em>Starbuck's CEO</em>
-            </li>
-          </ul>
-        </div>
-        <div class="">
-          <button class="btn" type="button" name="button">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="btn" type="button" name="button">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+          <div class="slider">
+            <ul class="flex">
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPhoto]">
+                <span class="w3 uppercase">Torquato fagiani</span>
+                <em>Caldaie Ravasio Consultant</em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPhoto + 1]" >
+                <span class="w3 uppercase">walter panzeri</span>
+                <em>Tavernello Head of Sales</em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPhoto + 2]">
+                <span class="w3 uppercase">angelina holy</span>
+                <em>Maxii's Manager</em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPhoto + 3]">
+                <span class="w3 uppercase">micheal dover</span>
+                <em>Starbuck's CEO</em>
+              </li>
+            </ul>
+          <div class="buttonContainer">
+            <button @click="prevPhoto(indexPhoto)" class="btn" type="button" name="button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button @click="nextPhoto(indexPhoto)" class="btn" type="button" name="button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </section>
       <!-- sezione 5-->
