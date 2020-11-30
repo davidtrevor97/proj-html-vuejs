@@ -1,0 +1,124 @@
+/* GENERAL */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+/* UTILITIES */
+.flex{
+  display: flex;
+}
+.flexCenter{
+  justify-content: center;
+  align-items: center;
+}
+.column{
+  flex-direction: column;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.margin{
+  margin: 50px 150px 50px 150px;
+}
+.buttons{
+
+}
+.w3{
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.donec{
+  margin: 10px 0 10px 40px;
+  font-size: 11px;
+  color: #c6c1bd;
+}
+.read{
+  color: #f72b0c;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 40px;
+}
+.pH2{
+
+}
+.hList{
+
+}
+.h2White{
+
+}
+/* HOVERS */
+/* HEADER */
+header{
+  height: 80px;
+  width: 100%;
+}
+/* MAIN */
+/* section 1 */
+#se1{
+  height: 400px;
+  background-image: url("../img/slider-1-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.se1Container h1:first-of-type{
+  font-size: 40px;
+  font-weight: 100;
+}
+.se1Container h1:nth-child(2){
+  font-size: 60px;
+  font-weight: 800;
+}
+.se1Container > div{
+  width: 400px;
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 5px solid white;
+}
+.se1Container button{
+  margin-top: 20px;
+  color: white;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 700;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  background-color: #f72b0c;
+  border: none;
+  outline: none;
+}
+/* section 2 */
+#se2 > div {
+  margin: 0 15px 0 15px;
+}
+#se2 i{
+  color: #c6c1bd;
+}
+/* section 3 */
+#se3{
+  height: 320px;
+  background-image: url("../img/coutdown-bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
