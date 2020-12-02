@@ -16,7 +16,7 @@ const slider = new Vue({
   methods:{
     nextPhoto(indexPhoto){
       this.indexPhoto += 1;
-      if ( this.indexPhoto === this.photos.length ) {
+      if ( this.indexPhoto >= this.photos.length ) {
         this.indexPhoto = 0
       }
     },
