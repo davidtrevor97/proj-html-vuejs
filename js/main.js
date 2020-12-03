@@ -68,10 +68,12 @@ const timerContainer = new Vue({
         const hours = Math.floor((passingTime % this.days) / this.hours );
         const minutes = Math.floor((passingTime % this.hours) / this.minutes );
         const seconds = Math.floor((passingTime % this.minutes) / this.seconds);
+          this.displayDays = days < 10 ? "0" + days : days;
+          this.displayHours = hours < 10 ? "0" + hours : hours;
         this.displayMinutes = minutes < 10 ? "0" + minutes : minutes;
         this.displaySeconds = seconds < 10 ? "0" + seconds : seconds;
-        this.displayHours = hours < 10 ? "0" + hours : hours;
-        this.displayDays = days < 10 ? "0" + days : days;
+
+
 
       }, 1);
     }
