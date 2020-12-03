@@ -341,33 +341,34 @@
     </main>
     <!-- fine main -->
     <!-- inizio footer -->
-    <footer class="midSection flex flexCenter margin" id="footer1">
+    <footer class="midSection flex margin" id="footer1">
       <div class="flex column">
-        <h4 class="uppercase white">{{footer.about.title}}</h4>
-        <p>{{footer.about.p}}</p>
+        <h5 class="uppercase white">{{footer.about.title}}</h5>
+        <p class="donec">{{footer.about.p}}</p>
         <ul class="flex">
-          <li  v-for="social in footer.about.socials" :class="social"></li>
+          <li v-for="social in footer.about.socials" :class="social"></li>
         </ul>
       </div>
       <div class="flex column">
-        <h4 class="uppercase white">{{footer.news.title}}</h4>
+        <h5 class="uppercase white">{{footer.news.title}}</h5>
         <ul class="flex column">
-          <li v-for="link in footer.news.links">
-            <div class="">
+          <li class="flex" v-for="link in footer.news.links">
+            <i class="fas fa-chevron-right donec"></i>
+            <div class="uppercase donec">
               {{link}}
             </div>
           </li>
         </ul>
       </div>
       <div class="flex column">
-        <h4 class="white uppercase">{{footer.seat.title}}</h4>
-        <span></span>
-        <button type="button" class="buttons" name="button"></button>
+        <h5 class="white uppercase">{{footer.seat.title}}</h5>
+        <span class="donec">{{footer.seat.span}}</span>
+        <button type="button" class="buttons uppercase" name="button">{{footer.seat.button}}</button>
       </div>
-      <div class="">
-        <h4 class=" uppercase white">{{footer.gallery.title}}</h4>
+      <div class="flex column">
+        <h5 class=" uppercase white">{{footer.gallery.title}}</h5>
         <div class="flex">
-          <img src="" alt="">
+          <img class="radius" v-for="picture in footer.gallery.pictures" :src="'./img/'+picture" alt="">
         </div>
       </div>
     </footer>

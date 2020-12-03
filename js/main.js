@@ -105,9 +105,22 @@ const footer = new Vue({
       },
       seat:{
         title: "get your seat!",
+        span:"Book for your seat before it's too late. We provide variety of ticket options.",
+        button:"check out tickets!"
       },
       gallery:{
         title: "gallery from last year",
+        pictures:[
+          "tizia-cuffie.jpg",
+          "photodune-multiethnic-people.jpg",
+          "creative-man-relaxing.jpg",
+          "card01.jpg",
+          "card04.jpg",
+          "13349065283.jpg",
+          "2-item-1.jpg",
+          "photodune-white-coffee.jpg",
+          "essentials-denim.jpg"
+        ]
       }
     },
 
