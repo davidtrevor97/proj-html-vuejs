@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- inzio header -->
-    <header>
+    <header class="lilSection">
 
     </header>
     <!-- fine header -->
@@ -286,41 +286,93 @@
         <div class="flex column">
           <h2 class="uppercase">twitter feed</h2>
           <div class="flex column">
-            <div class="">
+            <div class="flex">
               <div class="">
                 <i class="fab fa-twitter"></i>
               </div>
-              <div class="">
-
+              <div class="donec">
+                Stand out and be vibrant with some of the best best and bold templates on <span class="red">@Envato</span> Elements And add a splash of...<span class="red">https://t.co/jFrsnzEJK7</span>
               </div>
             </div>
-            <div class="">
+            <div class="flex">
               <div class="">
                 <i class="fab fa-twitter"></i>
               </div>
-              <div class="">
-
+              <div class="donec">
+                Stand out and be vibrant with some of the best best and bold templates on <span class="red">@Envato</span> Elements And add a splash of...<span class="red">https://t.co/jFrsnzEJK7</span>
               </div>
             </div>
-            <div class="">
+            <div class="flex">
               <div class="">
                 <i class="fab fa-twitter"></i>
               </div>
-              <div class="">
-
+              <div class="donec">
+                Stand out and be vibrant with some of the best best and bold templates on <span class="red">@Envato</span> Elements And add a splash of...<span class="red">https://t.co/jFrsnzEJK7</span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- sezione 11-->
-      <section>
-
+      <section class="midSection flex flexCenter column " id="se11">
+        <h2 class="uppercase">sponsors</h2>
+        <span class="donec">Maecenas faucibus mollis iterdum.Nullma id dolor <br> id nibh ultricies behicula ud it elit.</span>
+        <ul class="flex">
+          <li>
+            <img src="./img/banner-1.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/banner-2.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/banner-3.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/banner-4.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/banner-5.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/banner-6.jpg" alt="">
+          </li>
+        </ul>
       </section>
     </main>
     <!-- fine main -->
     <!-- inizio footer -->
-    <footer></footer>
+    <footer class="midSection flex flexCenter margin" id="footer1">
+      <div class="flex column">
+        <h4 class="uppercase white">{{footer.about.title}}</h4>
+        <p>{{footer.about.p}}</p>
+        <ul class="flex">
+          <li  v-for="social in footer.about.socials" :class="social"></li>
+        </ul>
+      </div>
+      <div class="flex column">
+        <h4 class="uppercase white">{{footer.news.title}}</h4>
+        <ul class="flex column">
+          <li v-for="link in footer.news.links">
+            <div class="">
+              {{link}}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="flex column">
+        <h4 class="white uppercase">{{footer.seat.title}}</h4>
+        <span></span>
+        <button type="button" class="buttons" name="button"></button>
+      </div>
+      <div class="">
+        <h4 class=" uppercase white">{{footer.gallery.title}}</h4>
+        <div class="flex">
+          <img src="" alt="">
+        </div>
+      </div>
+    </footer>
+    <!-- footer 2 -->
+    <footer class="lilSection"></footer>
     <!-- fine footer -->
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

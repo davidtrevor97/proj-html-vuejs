@@ -11,7 +11,7 @@ const slider = new Vue({
       "./img/speaker-6.jpg" ,
       "./img/speaker-7.jpg ",
       "./img/speaker-8.jpg ",
-    ]
+    ],
   },
   methods:{
     nextPhoto(indexPhoto){
@@ -76,4 +76,43 @@ const timerContainer = new Vue({
       }, 1);
     }
   },
+});
+
+const footer = new Vue({
+  el:"#footer1",
+  data:{
+    footer:{
+      about:{
+        title: "about us",
+        p:"Cum nociis natoquepenatibus et magnis dis parturient montesnascitus ridiculus mus",
+        socials:[
+          "fab fa-facebook-square",
+          "fab fa-twitter-square",
+          "fab fa-linkedin",
+          "fab fa-google-plus-square",
+          "fab fa-pinterest-square"
+        ]
+      },
+      news:{
+        title: "recent news",
+        links:[
+          "sem porta mollis parturient",
+          "nullam lorem mattis purus",
+          "nibh set sim ullamcorper",
+          "donec luctus imperdiet",
+          "magna pars studiorum"
+        ],
+      },
+      seat:{
+        title: "get your seat!",
+      },
+      gallery:{
+        title: "gallery from last year",
+      }
+    },
+
+  },
+  methods:{
+
+  }
 });
