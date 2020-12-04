@@ -121,6 +121,12 @@ button:hover{
 #se5 .calendar > div:first-child > div:visited {
   background-color: #bf351f;
 }
+#se9 > div > div:hover{
+  transform: scale(1.05);
+  animation: 5s;
+  box-shadow: 5px 10px 8px #888888 ;
+  cursor: pointer;
+}
 #footer1 > *:hover{
   cursor: pointer;
 }
@@ -370,6 +376,7 @@ header{
   margin-top: 30px;
 }
 #se9 > div > div{
+  animation: 0.4s;
   margin: 0 10px 0 10px;
 }
 #se9 > div > div > div:nth-child(2){
@@ -378,6 +385,23 @@ header{
 }
 #se9 > div > div > div:last-child{
   background-color: #f72b0c;
+  padding: 10px;
+}
+#se9 > div > div > div:nth-child(2){
+  padding: 20px 30px;
+}
+#se9 span{
+  font-weight: 800;
+}
+#se9 span:last-child{
+  color: #f72b0c;
+}
+#se9 em{
+  font-size: 13px;
+}
+#se9 em,
+#se9 span{
+  margin: 5px;
 }
 /* section 10 */
 #se10 > div:first-of-type img{
