@@ -1,7 +1,8 @@
 const slider = new Vue({
-  el: ".slider",
+  el: "#se4",
   data:{
     indexPhoto: 0,
+    indexPicture:4,
     photos:[
       "./img/speaker-1.jpg ",
       "./img/speaker-2.jpg" ,
@@ -14,21 +15,62 @@ const slider = new Vue({
     ],
   },
   methods:{
-    nextPhoto(indexPhoto){
-      this.indexPhoto += 1;
-      if ( this.indexPhoto >= this.photos.length ) {
-        this.indexPhoto = 0
+    nextPhoto(){
+      const first = document.getElementById("first");
+      const second = document.getElementById("second");
+      if (first.style.display === "block") {
+        first.style.display = "none"  ;
+        second.style.display = "block"
+      } else {
+        second.style.display = "none"
+        first.style.display = "block";
       }
     },
-    prevPhoto(indexPhoto){
-      this.indexPhoto -= 1;
-      if ( this.indexPhoto < 0 ) {
-        this.indexPhoto = this.photos.length
+    prevPhoto(){
+      const first = document.getElementById("first");
+      const second = document.getElementById("second");
+      if (first.style.display === "block") {
+        first.style.display = "none"  ;
+        second.style.display = "block"
+      } else {
+        second.style.display = "none"
+        first.style.display = "block";
       }
     }
   },
 
 });
+
+function funzione1() {
+  var x = document.getElementById("bottoni-scelta");
+  if (x.style.display === "block") {
+    x.style.display = "none"  ;
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function funzione2() {
+  var y = document.getElementById("mappa");
+  if (y.style.display === "block") {
+    y.style.display = "none" ;
+  } else {
+    y.style.display = "block"   ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const timerContainer = new Vue({
   el: ".timerContainer",

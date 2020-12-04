@@ -79,7 +79,7 @@
       <!-- sezione 4-->
       <section class="midSection margin" id="se4">
         <h2 class="uppercase">speakers</h2>
-          <div class="slider">
+          <div id="first" class="slider">
             <ul class="flex">
               <li class="flex column flexCenter">
                 <img :src="photos[indexPhoto]">
@@ -89,7 +89,7 @@
               <li class="flex column flexCenter">
                 <img :src="photos[indexPhoto + 1]" >
                 <span class="w3 uppercase">walter panzeri</span>
-                <em>Tavernello Head of Sales</em>
+                <em>Lambrusco DOC Head of Sales</em>
               </li>
               <li class="flex column flexCenter">
                 <img :src="photos[indexPhoto + 2]">
@@ -102,6 +102,31 @@
                 <em>Starbuck's CEO</em>
               </li>
             </ul>
+          </div>
+          <div id="second" class="slider">
+            <ul class="flex">
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPicture]">
+                <span class="w3 uppercase">janet jones</span>
+                <em>New York Post's GM</em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPicture + 1]" >
+                <span class="w3 uppercase">patrick spencer</span>
+                <em>S&P Analyzer</em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPicture + 2]">
+                <span class="w3 uppercase">cosimo fini</span>
+                <em>la G la U la E </em>
+              </li>
+              <li class="flex column flexCenter">
+                <img :src="photos[indexPicture + 3]">
+                <span class="w3 uppercase">lauren francis</span>
+                <em>Google's UI Designer</em>
+              </li>
+            </ul>
+          </div>
           <div class="buttonContainer">
             <button @click="prevPhoto(indexPhoto)" class="btn" type="button" name="button">
               <i class="fas fa-chevron-left"></i>
@@ -109,7 +134,6 @@
             <button @click="nextPhoto(indexPhoto)" class="btn" type="button" name="button">
               <i class="fas fa-chevron-right"></i>
             </button>
-          </div>
         </div>
       </section>
       <!-- sezione 5-->
