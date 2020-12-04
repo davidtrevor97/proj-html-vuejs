@@ -5,13 +5,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>KEYNOTE</title>
   </head>
   <body>
     <!-- inzio header -->
-    <header class="lilSection">
-
+    <header class="lilSection  flex">
+      <div class="">
+        <img :src="logo" alt="logo">
+      </div>
+      <div class="hList">
+        <ul>
+          <li class="uppercase" v-for="item in list"> {{item}}</li>
+          <li> <i class="fas fa-search"></i></li>
+        </ul>
+      </div>
     </header>
     <!-- fine header -->
     <!-- inizio main -->

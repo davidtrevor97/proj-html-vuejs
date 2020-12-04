@@ -1,3 +1,21 @@
+const headewr = new Vue({
+  el: "header",
+  data:{
+    logo: "./img/logo.png",
+    list:[
+      "home",
+      "pages",
+      "program",
+      "tickets",
+      "speakers",
+      "papers",
+      "blog",
+      "shortcodes",
+      "|",
+      ]
+  }
+});
+
 const slider = new Vue({
   el: "#se4",
   data:{
@@ -40,36 +58,6 @@ const slider = new Vue({
   },
 
 });
-
-function funzione1() {
-  var x = document.getElementById("bottoni-scelta");
-  if (x.style.display === "block") {
-    x.style.display = "none"  ;
-  } else {
-    x.style.display = "block";
-  }
-}
-
-function funzione2() {
-  var y = document.getElementById("mappa");
-  if (y.style.display === "block") {
-    y.style.display = "none" ;
-  } else {
-    y.style.display = "block"   ;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const timerContainer = new Vue({
